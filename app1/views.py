@@ -82,6 +82,9 @@ class Plane(Vehicle):
     def move(self):
         print("Plane is flying!")
 
+    def greeting(self):
+        print("hello to all!")
+
 
 car1 = Car("Honda", "Civic")
 boat1 = Boat("Sunny", "Sailor")
