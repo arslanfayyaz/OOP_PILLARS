@@ -1,15 +1,15 @@
 class Vehicle:
     def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
-        self.fuel = 100
+        self.__brand = brand
+        self.__model = model
+        self.__fuel = 100
 
     def refuel(self, liters):
-        self.fuel += liters
-        print(f"Refueled {liters} liters. Current fuel level: {self.fuel}")
+        self.__fuel += liters
+        print(f"Refueled {liters} liters. Current fuel level: {self.__fuel}")
 
     def check_fuel(self):
-        print(f"Current fuel level: {self.fuel}")
+        print(f"Current fuel level: {self.__fuel}")
 
     def make_sound(self):
         print("Beep! Beep!")
@@ -21,7 +21,7 @@ class Vehicle:
         print("Braking!")
 
     def get_brand_model(self):
-        return f"Brand: {self.brand}, Model: {self.model}"
+        return f"Brand: {self.__brand}, Model: {self.__model}"
 
     def move(self):
         raise NotImplementedError("Move method must be implemented in the derived class.")
