@@ -51,6 +51,7 @@ class Truck(Vehicle):
         if self.cargo_capacity >= weight:
             self.cargo_capacity -= weight
             print(f"Cargo unloaded. Current cargo capacity: {self.cargo_capacity} kg.")
+
         else:
             print("Not enough cargo to unload.")
 
